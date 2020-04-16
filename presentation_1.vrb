@@ -1,0 +1,10 @@
+\frametitle{References part (1)}
+    \begin{itemize}
+        \item Sun C., Qiu X., Xu Y., Huang X. (2019) How to Fine-Tune BERT for
+        Text Classification?. Chinese Computational Linguistics. CCL 2019.
+        Lecture Notes in Computer Science, vol 11856. Springer, Cham
+        \item Ashish Vaswani et al. (2017). Attention Is All You Need.
+        \item Devlin, Jacob et al. (2018).
+        BERT: Pre-training of Deep Bidirectional Transformers for Language
+        Understanding.
+    \end{itemize}

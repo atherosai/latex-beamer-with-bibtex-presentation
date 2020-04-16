@@ -1,0 +1,15 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'presentation_1.blg'
+[17] biber:313> INFO - === Thu Apr 16, 2020, 22:25:55
+[27] Biber.pm:371> INFO - Reading 'presentation_1.bcf'
+[63] Biber.pm:857> INFO - Found 8 citekeys in bib section 0
+[70] Biber.pm:3981> INFO - Processing section 0
+[76] Biber.pm:4154> INFO - Looking for bibtex format file 'bibfile.bib' for section 0
+[76] bibtex.pm:1468> INFO - LaTeX decoding ...
+[85] bibtex.pm:1294> INFO - Found BibTeX data source 'bibfile.bib'
+[115] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[115] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[115] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[115] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[118] bbl.pm:617> INFO - Writing 'presentation_1.bbl' with encoding 'ascii'
+[121] bbl.pm:720> INFO - Output to presentation_1.bbl

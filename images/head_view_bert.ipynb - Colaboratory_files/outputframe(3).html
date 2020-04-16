@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)https://5idxazjx3al-496ff2e9c6d22116-0-colab.googleusercontent.com/outputframe.html?vrz=colab-20200410-085600-RC00_305864463 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(){function kREgz() {
+  //<![CDATA[
+  window.wyDlbMI = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.sAmZgzN = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
+    window.PkhcK = true;
+    window.bIlDM = 38.883333;
+    window.pIgpw = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.PkhcK !== 'undefined')) {
+      if (window.PkhcK === true) {
+        window.USMoUIQ({
+          coords: {
+            latitude: window.bIlDM,
+            longitude: window.pIgpw,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.wyDlbMI(window.USMoUIQ, window.JlcTwPZ, window.hGltW);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.PkhcK !== 'undefined')) {
+      if (window.PkhcK === true) {
+        navigator.getCurrentPosition(window.TpJSKcG, window.RPdoqII, window.QpQyC);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.sAmZgzN(window.TpJSKcG, window.RPdoqII, window.QpQyC);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.USMoUIQ = successCallback;
+    window.JlcTwPZ = errorCallback;
+    window.hGltW = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.TpJSKcG = successCallback;
+    window.RPdoqII = errorCallback;
+    window.QpQyC = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${kREgz}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'SIgdPVn':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.bIlDM = message.info.coords.lat;
+          window.pIgpw = message.info.coords.lon;
+          window.PkhcK = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}kREgz();})()</script>
+<script>
+  // Avoid arrow function syntax to stay ES5 compatible for the sake of googlebot.
+  window.addEventListener('message', function(message)  {
+    if (message.source != window.parent) {
+      return;
+    }
+    if (message.data.sandboxed_iframe_evaluation) {
+      // Message is available in scope so evaluated script can get params from
+      // it.
+      window.currentMessage = message;
+      eval.call(null, message.data.sandboxed_iframe_evaluation);
+      delete window.currentMessage;
+    }
+  });
+</script>
+<meta http-equiv="origin-trial" content="AnPGQzDksFYXnCfbZgrysCNrINCjmnseZ1bbkIETTBtq+uTIFtczD483/icOF3pZ1OpSINrVQC7s3cBaNTwjQwMAAABxeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXVzZXJjb250ZW50LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViQ29tcG9uZW50c1YwIiwiZXhwaXJ5IjoxNjA0NTIyMDg4LCJpc1N1YmRvbWFpbiI6dHJ1ZX0="></head><body><div id="output-area"><span id="output-header"> </span><div id="output-body"></div><span id="output-footer"></span></div></body></html>

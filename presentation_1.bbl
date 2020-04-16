@@ -1,0 +1,270 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{hochreiter1997long}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=41b31e29fb2bdbf9f5c9c1b0d5b3e815}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={Sepp},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{417a848243e595e742d2bfabbab6ea78}
+      \strng{fullhash}{417a848243e595e742d2bfabbab6ea78}
+      \strng{bibnamehash}{417a848243e595e742d2bfabbab6ea78}
+      \strng{authorbibnamehash}{417a848243e595e742d2bfabbab6ea78}
+      \strng{authornamehash}{417a848243e595e742d2bfabbab6ea78}
+      \strng{authorfullhash}{417a848243e595e742d2bfabbab6ea78}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural computation}
+      \field{number}{8}
+      \field{title}{Long short-term memory}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1735\bibrangedash 1780}
+      \range{pages}{46}
+      \keyw{lstm rnn}
+    \endentry
+    \entry{vaswani2017attention}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Attention Is All You Need}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1706.03762
+      \endverb
+    \endentry
+    \entry{devlin2018bert}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
+           family={Devlin},
+           familyi={D\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{fullhash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{bibnamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{authorbibnamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{authornamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{authorfullhash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1810.04805
+      \endverb
+    \endentry
+    \entry{wordPiece}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=29ea22df63f174ac629e9ef100b40484}{%
+           family={Schuster},
+           familyi={S\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1d20d5b8bd640164d33b88d883ddf6a7}
+      \strng{fullhash}{1d20d5b8bd640164d33b88d883ddf6a7}
+      \strng{bibnamehash}{1d20d5b8bd640164d33b88d883ddf6a7}
+      \strng{authorbibnamehash}{1d20d5b8bd640164d33b88d883ddf6a7}
+      \strng{authornamehash}{1d20d5b8bd640164d33b88d883ddf6a7}
+      \strng{authorfullhash}{1d20d5b8bd640164d33b88d883ddf6a7}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Acoustics, Speech and Signal Processing}
+      \field{title}{Japanese and Korean Voice Search}
+      \field{year}{2012}
+      \field{pages}{5149\bibrangedash 5152}
+      \range{pages}{4}
+    \endentry
+    \entry{yang2019xlnet}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=6b1fa069ba3a41402c63a24209e47289}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zhilin},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c01d380693737340325a0771b3b3b362}
+      \strng{fullhash}{c01d380693737340325a0771b3b3b362}
+      \strng{bibnamehash}{c01d380693737340325a0771b3b3b362}
+      \strng{authorbibnamehash}{c01d380693737340325a0771b3b3b362}
+      \strng{authornamehash}{c01d380693737340325a0771b3b3b362}
+      \strng{authorfullhash}{c01d380693737340325a0771b3b3b362}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{XLNet: Generalized Autoregressive Pretraining for Language Understanding}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1906.08237
+      \endverb
+    \endentry
+    \entry{sun2019finetune}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8a30a3c4499126236179c335b002f6cd}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Chi},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a85a8e94888cc492ecf7207d4c923681}
+      \strng{fullhash}{a85a8e94888cc492ecf7207d4c923681}
+      \strng{bibnamehash}{a85a8e94888cc492ecf7207d4c923681}
+      \strng{authorbibnamehash}{a85a8e94888cc492ecf7207d4c923681}
+      \strng{authornamehash}{a85a8e94888cc492ecf7207d4c923681}
+      \strng{authorfullhash}{a85a8e94888cc492ecf7207d4c923681}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{How to Fine-Tune BERT for Text Classification?}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1905.05583
+      \endverb
+    \endentry
+    \entry{howard2018universal}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5ed422e177c5444b96679479aeed0c51}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1d7eb4f80cbcbd5bbbfcd11f7a16747b}
+      \strng{fullhash}{1d7eb4f80cbcbd5bbbfcd11f7a16747b}
+      \strng{bibnamehash}{1d7eb4f80cbcbd5bbbfcd11f7a16747b}
+      \strng{authorbibnamehash}{1d7eb4f80cbcbd5bbbfcd11f7a16747b}
+      \strng{authornamehash}{1d7eb4f80cbcbd5bbbfcd11f7a16747b}
+      \strng{authorfullhash}{1d7eb4f80cbcbd5bbbfcd11f7a16747b}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Universal Language Model Fine-tuning for Text Classification}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1801.06146
+      \endverb
+    \endentry
+    \entry{Gray2017GPUKF}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7006ca8c1ce969019b89de50fece60dd}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{148852f76a5d4744be7c791186e04c00}
+      \strng{fullhash}{148852f76a5d4744be7c791186e04c00}
+      \strng{bibnamehash}{148852f76a5d4744be7c791186e04c00}
+      \strng{authorbibnamehash}{148852f76a5d4744be7c791186e04c00}
+      \strng{authornamehash}{148852f76a5d4744be7c791186e04c00}
+      \strng{authorfullhash}{148852f76a5d4744be7c791186e04c00}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GPU Kernels for Block-Sparse Weights}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
